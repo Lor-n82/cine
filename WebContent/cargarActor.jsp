@@ -15,7 +15,7 @@
 	a1.setNumPeliculas(request.getParameter("pelis") != null ? Integer.parseInt(request.getParameter("edad"))  : 0);
 	
 	try{
-        File file = new File("..\\..\\archivo.csv");
+        File file = new File("archivo.csv");
         System.out.println(file.getAbsolutePath());
         file.createNewFile();
         FileWriter fw=new FileWriter(file, true);
@@ -32,8 +32,9 @@
         fw.flush();
         fw.close(); 
     }catch(IOException e){
-    	
         System.out.println("Error E/S: "+e);
     }
+	
+	response.sendRedirect("leerActor.jsp");
 
 %>
