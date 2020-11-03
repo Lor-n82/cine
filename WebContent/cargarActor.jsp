@@ -15,7 +15,7 @@
 	a1.setNumeroPeliculas(request.getParameter("pelis") != null ? Integer.parseInt(request.getParameter("edad"))  : 0);
 	
 	try{
-        File file = new File("archivo.csv");
+        File file = new File("actores.csv");
         System.out.println(file.getAbsolutePath());
         file.createNewFile();
         FileWriter fw=new FileWriter(file, true);
