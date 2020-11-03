@@ -1,6 +1,6 @@
 package clases;
 
-public class Autor {
+public class Actor {
 	
 		private String nombre;
 		private String apellido;
@@ -10,7 +10,7 @@ public class Autor {
 		private int numeroPeliculas;
 		
 		
-		public Autor() {
+		public Actor() {
 			this.nombre = "";
 			this.apellido = "";
 			this.edad = 18;
@@ -19,7 +19,7 @@ public class Autor {
 			this.numeroPeliculas = 0;
 		}
 	
-		public Autor(String nombre, String apellido, int edad, String lugarNacimiento, int numeroOscars,
+		public Actor(String nombre, String apellido, int edad, String lugarNacimiento, int numeroOscars,
 				int numeroPeliculas) {
 			this.nombre = nombre;
 			this.apellido = apellido;
@@ -67,3 +67,4 @@ public class Autor {
 		}
 		
 }
+
