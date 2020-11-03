@@ -5,8 +5,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
+	<h1 class="cabecera">Inicio</h1>
 	<form action="cargarActor.jsp" method="GET">
 		<label for="">Nombre</label>
 		<input type="text" name="nombre" id="nombre">
